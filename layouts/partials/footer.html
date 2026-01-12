@@ -18,8 +18,8 @@
     </footer>
 </div>
 <script src="{{ "js/scripts.js" | relURL }}"></script>
-{{ if .Site.GoogleAnalytics }}
-  {{ template "_internal/google_analytics.html" . }}
+{{ if .Site.Params.googleAnalytics }}
+    <!-- Google Analytics is configured via site params (site params used instead of removed .Site.GoogleAnalytics) -->
 {{ end }}
 {{ partial "user_footer" . }}
 </body>

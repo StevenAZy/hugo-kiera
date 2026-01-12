@@ -17,7 +17,7 @@
     {{ if .Site.Params.UtterancesRepo }}
         {{ partial "utterances" . }}
     {{ end }}
-    {{ if .Site.DisqusShortname }}
+    {{ if .Site.Params.disqusShortname }}
         {{ partial "disqus" . }}
     {{ end }}
   {{ end }}
